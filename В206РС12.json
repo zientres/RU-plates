@@ -1,0 +1,19 @@
+{
+  "name": "В206РС",
+  "description": "A digital collectible В206РС. Part of the RU Plates collection.",
+  "image": "https://raw.githubusercontent.com/zientres/RU-plates/main/%D0%92206%D0%A0%D0%A112.png",
+  "attributes": [
+    {
+      "trait_type": "Region",
+      "value": "12"
+    },
+    {
+      "trait_type": "Letter Combination",
+      "value": "ВРС"
+    },
+    {
+      "trait_type": "Number Combination",
+      "value": "206"
+    }
+  ]
+}
