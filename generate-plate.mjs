@@ -1,36 +1,38 @@
 #!/usr/bin/env node
 /**
- * Generate RU Plates standard NFT metadata from the existing collection template.
- * Usage:
- *   node generate-plate.mjs "В206РС" "12" "https://raw.githubusercontent.com/zientres/RU-plates/main/В206РС12.png"
- * Output: plates/В206РС12.json
+ * Generate metadata for an RU Plates NFT.
+ * Usage: node generate-plate.mjs "Т767ОР" "53"
+ * Output: plates/Т767ОР53/Т767ОР53.json
  */
 import fs from "node:fs";
 import path from "node:path";
 
-const [plate, region, imageUrl] = process.argv.slice(2);
-if (!plate || !region || !imageUrl) {
-  console.error('Usage: node generate-plate.mjs "<PLATE>" "<REGION>" "<IMAGE_URL>"');
-  process.exit(1);
-}
-const match = plate.match(/^([\p{L}]+)(\d+)([\p{L}]+)$/u);
+const [plate, region] = process.argv.slice(2);
+const match = plate?.match(/^([АВЕКМНОРСТУХ])(\d{3})([АВЕКМНОРСТУХ]{2})$/u);
 if (!match) {
-  console.error("Plate must contain letters-number-letters (e.g. В206РС).");
+  console.error('Plate must use Russian format: one allowed letter, three digits, two allowed letters (e.g. Т767ОР).');
   process.exit(1);
 }
-const [, firstLetters, numbers, lastLetters] = match;
+if (!/^\d{2,3}$/u.test(region ?? "")) {
+  console.error("Region must contain 2 or 3 digits.");
+  process.exit(1);
+}
+
+const [, first, numbers, last] = match;
+const id = `${plate}${region}`;
+const folder = path.join("plates", id);
+fs.mkdirSync(folder, { recursive: true });
+const imageUrl = `https://raw.githubusercontent.com/zientres/RU-plates/main/plates/${encodeURIComponent(id)}/${encodeURIComponent(id)}.png`;
 const metadata = {
   name: plate,
   description: `A digital collectible ${plate}. Part of the RU Plates collection.`,
   image: imageUrl,
   attributes: [
     { trait_type: "Region", value: String(region) },
-    { trait_type: "Letter Combination", value: firstLetters + lastLetters },
+    { trait_type: "Letter Combination", value: first + last },
     { trait_type: "Number Combination", value: numbers }
   ]
 };
-const outDir = path.join("plates");
-fs.mkdirSync(outDir, { recursive: true });
-const output = path.join(outDir, `${plate}${region}.json`);
+const output = path.join(folder, `${id}.json`);
 fs.writeFileSync(output, JSON.stringify(metadata, null, 2) + "\n", "utf8");
 console.log(`Created ${output}`);
