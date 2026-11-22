@@ -1,0 +1,19 @@
+{
+  "name": "Р372НЕ",
+  "description": "A digital collectible Р372НЕ. Part of the RU Plates collection.",
+  "image": "https://raw.githubusercontent.com/zientres/RU-plates/main/plates/%D0%A0372%D0%9D%D0%9517/%D0%A0372%D0%9D%D0%9517.png",
+  "attributes": [
+    {
+      "trait_type": "Region",
+      "value": "17"
+    },
+    {
+      "trait_type": "Letter Combination",
+      "value": "РНЕ"
+    },
+    {
+      "trait_type": "Number Combination",
+      "value": "372"
+    }
+  ]
+}
