@@ -41,7 +41,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
         font-weight="700" fill="#000">${combination}</text>
   <line x1="${separatorX}" y1="${plateY + 4}" x2="${separatorX}" y2="${plateY + plateH - 4}"
         stroke="#111" stroke-width="2"/>
-  <text x="${rightCenter}" y="${plateY + 52}" text-anchor="middle"
+  <text x="${rightCenter}" y="${plateY + 62}" text-anchor="middle"
         font-family="Arial, DejaVu Sans, sans-serif" font-size="36"
         font-weight="700" fill="#000">${region}</text>
   <text x="${rightCenter}" y="${plateY + 81}" text-anchor="middle"
