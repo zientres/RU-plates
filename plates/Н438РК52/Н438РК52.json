@@ -1,0 +1,19 @@
+{
+  "name": "Н438РК",
+  "description": "A digital collectible Н438РК. Part of the RU Plates collection.",
+  "image": "https://raw.githubusercontent.com/zientres/RU-plates/main/plates/%D0%9D438%D0%A0%D0%9A52/%D0%9D438%D0%A0%D0%9A52.png",
+  "attributes": [
+    {
+      "trait_type": "Region",
+      "value": "52"
+    },
+    {
+      "trait_type": "Letter Combination",
+      "value": "НРК"
+    },
+    {
+      "trait_type": "Number Combination",
+      "value": "438"
+    }
+  ]
+}
