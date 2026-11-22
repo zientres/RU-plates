@@ -1,0 +1,19 @@
+{
+  "name": "У904КК",
+  "description": "A digital collectible У904КК. Part of the RU Plates collection.",
+  "image": "https://raw.githubusercontent.com/zientres/RU-plates/main/plates/%D0%A3904%D0%9A%D0%9A74/%D0%A3904%D0%9A%D0%9A74.png",
+  "attributes": [
+    {
+      "trait_type": "Region",
+      "value": "74"
+    },
+    {
+      "trait_type": "Letter Combination",
+      "value": "УКК"
+    },
+    {
+      "trait_type": "Number Combination",
+      "value": "904"
+    }
+  ]
+}
