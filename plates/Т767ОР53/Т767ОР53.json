@@ -1,0 +1,19 @@
+{
+  "name": "Т767ОР",
+  "description": "A digital collectible Т767ОР. Part of the RU Plates collection.",
+  "image": "https://raw.githubusercontent.com/zientres/RU-plates/main/plates/%D0%A2767%D0%9E%D0%A053/%D0%A2767%D0%9E%D0%A053.png",
+  "attributes": [
+    {
+      "trait_type": "Region",
+      "value": "53"
+    },
+    {
+      "trait_type": "Letter Combination",
+      "value": "ТОР"
+    },
+    {
+      "trait_type": "Number Combination",
+      "value": "767"
+    }
+  ]
+}
