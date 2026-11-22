@@ -1,0 +1,19 @@
+{
+  "name": "А445СУ",
+  "description": "A digital collectible А445СУ. Part of the RU Plates collection.",
+  "image": "https://raw.githubusercontent.com/zientres/RU-plates/main/plates/%D0%90445%D0%A1%D0%A3190/%D0%90445%D0%A1%D0%A3190.png",
+  "attributes": [
+    {
+      "trait_type": "Region",
+      "value": "190"
+    },
+    {
+      "trait_type": "Letter Combination",
+      "value": "АСУ"
+    },
+    {
+      "trait_type": "Number Combination",
+      "value": "445"
+    }
+  ]
+}
