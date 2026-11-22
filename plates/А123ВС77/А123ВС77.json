@@ -1,0 +1,10 @@
+{
+  "name": "А123ВС",
+  "description": "A digital collectible А123ВС. Part of the RU Plates collection.",
+  "image": "https://raw.githubusercontent.com/zientres/RU-plates/main/plates/%D0%90123%D0%92%D0%A177/%D0%90123%D0%92%D0%A177.png",
+  "attributes": [
+    { "trait_type": "Region", "value": "77" },
+    { "trait_type": "Letter Combination", "value": "АВС" },
+    { "trait_type": "Number Combination", "value": "123" }
+  ]
+}
