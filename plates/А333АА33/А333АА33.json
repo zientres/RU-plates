@@ -1,0 +1,19 @@
+{
+  "name": "А333АА",
+  "description": "A digital collectible А333АА. Part of the RU Plates collection.",
+  "image": "https://raw.githubusercontent.com/zientres/RU-plates/main/plates/%D0%90333%D0%90%D0%9033/%D0%90333%D0%90%D0%9033.png",
+  "attributes": [
+    {
+      "trait_type": "Region",
+      "value": "33"
+    },
+    {
+      "trait_type": "Letter Combination",
+      "value": "ААА"
+    },
+    {
+      "trait_type": "Number Combination",
+      "value": "333"
+    }
+  ]
+}
