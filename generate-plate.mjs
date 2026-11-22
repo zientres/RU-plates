@@ -32,5 +32,5 @@ const metadata = {
 const outDir = path.join("plates");
 fs.mkdirSync(outDir, { recursive: true });
 const output = path.join(outDir, `${plate}${region}.json`);
-fs.writeFileSync(output, JSON.stringify(metadata, null, 2) + "\\n", "utf8");
+fs.writeFileSync(output, JSON.stringify(metadata, null, 2) + "\n", "utf8");
 console.log(`Created ${output}`);
