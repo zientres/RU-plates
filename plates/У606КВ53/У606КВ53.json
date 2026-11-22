@@ -1,0 +1,19 @@
+{
+  "name": "У606КВ",
+  "description": "A digital collectible У606КВ. Part of the RU Plates collection.",
+  "image": "https://raw.githubusercontent.com/zientres/RU-plates/main/plates/%D0%A3606%D0%9A%D0%9253/%D0%A3606%D0%9A%D0%9253.png",
+  "attributes": [
+    {
+      "trait_type": "Region",
+      "value": "53"
+    },
+    {
+      "trait_type": "Letter Combination",
+      "value": "УКВ"
+    },
+    {
+      "trait_type": "Number Combination",
+      "value": "606"
+    }
+  ]
+}
