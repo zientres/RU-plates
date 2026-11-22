@@ -1,0 +1,19 @@
+{
+  "name": "О777ОО",
+  "description": "A digital collectible О777ОО. Part of the RU Plates collection.",
+  "image": "https://raw.githubusercontent.com/zientres/RU-plates/main/plates/%D0%9E777%D0%9E%D0%9E334/%D0%9E777%D0%9E%D0%9E334.png",
+  "attributes": [
+    {
+      "trait_type": "Region",
+      "value": "334"
+    },
+    {
+      "trait_type": "Letter Combination",
+      "value": "ООО"
+    },
+    {
+      "trait_type": "Number Combination",
+      "value": "777"
+    }
+  ]
+}
