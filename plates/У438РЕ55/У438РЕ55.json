@@ -1,0 +1,19 @@
+{
+  "name": "У438РЕ",
+  "description": "A digital collectible У438РЕ. Part of the RU Plates collection.",
+  "image": "https://raw.githubusercontent.com/zientres/RU-plates/main/plates/%D0%A3438%D0%A0%D0%9555/%D0%A3438%D0%A0%D0%9555.png",
+  "attributes": [
+    {
+      "trait_type": "Region",
+      "value": "55"
+    },
+    {
+      "trait_type": "Letter Combination",
+      "value": "УРЕ"
+    },
+    {
+      "trait_type": "Number Combination",
+      "value": "438"
+    }
+  ]
+}
