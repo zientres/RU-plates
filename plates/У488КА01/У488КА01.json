@@ -1,0 +1,19 @@
+{
+  "name": "У488КА",
+  "description": "A digital collectible У488КА. Part of the RU Plates collection.",
+  "image": "https://raw.githubusercontent.com/zientres/RU-plates/main/plates/%D0%A3488%D0%9A%D0%9001/%D0%A3488%D0%9A%D0%9001.png",
+  "attributes": [
+    {
+      "trait_type": "Region",
+      "value": "01"
+    },
+    {
+      "trait_type": "Letter Combination",
+      "value": "УКА"
+    },
+    {
+      "trait_type": "Number Combination",
+      "value": "488"
+    }
+  ]
+}
