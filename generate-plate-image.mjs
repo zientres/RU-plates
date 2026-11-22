@@ -28,7 +28,7 @@ const plateY = 204;
 const plateW = 430;
 const plateH = 92;
 const separatorX = plateX + 330;
-const [first, digits, last] = match;
+const [, first, digits, last] = match;
 const combination = `${first}${digits}${last}`;
 const rightCenter = separatorX + (plateX + plateW - separatorX) / 2;
 
