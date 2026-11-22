@@ -1,0 +1,19 @@
+{
+  "name": "В919КА",
+  "description": "A digital collectible В919КА. Part of the RU Plates collection.",
+  "image": "https://raw.githubusercontent.com/zientres/RU-plates/main/plates/%D0%92919%D0%9A%D0%9073/%D0%92919%D0%9A%D0%9073.png",
+  "attributes": [
+    {
+      "trait_type": "Region",
+      "value": "73"
+    },
+    {
+      "trait_type": "Letter Combination",
+      "value": "ВКА"
+    },
+    {
+      "trait_type": "Number Combination",
+      "value": "919"
+    }
+  ]
+}
