@@ -13,7 +13,7 @@ if (!plate || !region || !imageUrl) {
   console.error('Usage: node generate-plate.mjs "<PLATE>" "<REGION>" "<IMAGE_URL>"');
   process.exit(1);
 }
-const match = plate.match(/^([\\p{L}]+)(\\d+)([\\p{L}]+)$/u);
+const match = plate.match(/^([\p{L}]+)(\d+)([\p{L}]+)$/u);
 if (!match) {
   console.error("Plate must contain letters-number-letters (e.g. В206РС).");
   process.exit(1);
