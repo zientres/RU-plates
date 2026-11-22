@@ -1,0 +1,63 @@
+name: Generate RU plate
+
+on:
+  workflow_dispatch:
+    inputs:
+      plate:
+        description: "Номер без региона, например Т767ОР"
+        required: true
+        type: string
+      region:
+        description: "Код региона, например 53"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install image dependency
+        run: npm install --no-save --package-lock=false sharp
+
+      - name: Generate plate image and metadata
+        env:
+          PLATE: ${{ inputs.plate }}
+          REGION: ${{ inputs.region }}
+        run: |
+          node generate-plate-image.mjs "$PLATE" "$REGION"
+          node generate-plate.mjs "$PLATE" "$REGION"
+
+      - name: Upload generated files
+        uses: actions/upload-artifact@v4
+        with:
+          name: ru-plate-${{ inputs.plate }}-${{ inputs.region }}
+          path: plates/${{ inputs.plate }}${{ inputs.region }}/
+          if-no-files-found: error
+
+      - name: Save files to repository
+        env:
+          PLATE: ${{ inputs.plate }}
+          REGION: ${{ inputs.region }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "plates/${PLATE}${REGION}/"
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Generate plate ${PLATE}${REGION}"
+            git push origin HEAD:main
+          fi
