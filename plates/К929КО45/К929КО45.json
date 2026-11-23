@@ -1,0 +1,19 @@
+{
+  "name": "К929КО",
+  "description": "A digital collectible К929КО. Part of the RU Plates collection.",
+  "image": "https://raw.githubusercontent.com/zientres/RU-plates/main/plates/%D0%9A929%D0%9A%D0%9E45/%D0%9A929%D0%9A%D0%9E45.png",
+  "attributes": [
+    {
+      "trait_type": "Region",
+      "value": "45"
+    },
+    {
+      "trait_type": "Letter Combination",
+      "value": "ККО"
+    },
+    {
+      "trait_type": "Number Combination",
+      "value": "929"
+    }
+  ]
+}
